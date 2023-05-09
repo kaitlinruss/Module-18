@@ -1,0 +1,203 @@
+font-family: 'Averia Serif Libre', cursive;
+font-family: 'Hind Siliguri', sans-serif;
+body{
+    background-color: #F5F0F6;
+    color: #222345;
+    margin: 0;
+}
+.animation img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.myFace{
+    width: 30%;
+    padding: 15px;
+}
+.textBox1{
+    width: 400px;   
+}
+
+p {
+  margin-top: 0.3em ;
+  margin-bottom: 0.3em ;
+}
+.abtMe{
+    text-align: center;
+}
+.subHead{
+    background-color: #F5F0F6;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 36;
+    color: #222345;
+    text-align: center;
+    
+}
+.bodyText{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20;
+    font-weight:400;
+    color: #222345;
+    background-color: #F5F0F6;
+}
+.boldText{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20;
+    font-weight:600;
+    color: #222345;
+    background-color: #F5F0F6;  
+}
+ul{
+    margin-top: 0.3em ;
+    margin-bottom: 0.3em ;
+}
+li{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20;
+    font-weight:400;
+    color: #222345;
+    background-color: #F5F0F6;
+    line-height: 120%;
+}
+.subHead:hover{
+    color: #0DAB76;
+    cursor: pointer;
+}
+
+.gridWrapper{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+}
+.second{
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+.textBox2{
+    grid-area: 2 / 1 / span 1 / span 1;
+    width: 70%; 
+    padding:10% 19%; 
+}
+.fridgeF{
+    grid-area: 2 / 2 / span 1 /span 1;
+    width:70%;
+    padding:5% 13%;
+    align-self: center;
+}
+.third{
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+.CFIA{
+    grid-area: 4 / 1 / span 1 /span 1;
+    width:70%;
+    padding:5% 13%;
+    align-self: center;
+    
+}
+.textBox3{
+    grid-area: 4 / 2 / span 1 /span 1;
+    width: 70%; 
+    padding:10% 19%;
+}
+.fourth{
+    grid-area: 5 / 1 / span 1 / span 2;
+}
+.textBox4{
+    grid-area: 6 / 1 / span 1 / span 1;
+    width: 70%; 
+    padding:10% 19%;
+    justify-self:start; 
+}
+.GWF{
+    grid-area: 6 / 2 / span 1 / span 1;
+    width:70%;
+    padding:5% 13%;
+    align-self: center;
+}
+@media only screen and (max-width: 800px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .myFace{
+        width: 55%;
+        padding: 5px;
+    }
+    .textBox1{
+        width: 70%;   
+    }
+    .gridWrapper{
+        display: grid;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-columns: 100%;
+    }
+    .second{
+        grid-area: 1 / 1 / span 1 / span 1;
+        align-self: center;
+    }
+    .fridgeF{
+        grid-area: 2 / 1 / span 1 /span 1;
+        width:90%;
+        padding:0% 0%;
+        align-self: start;
+        justify-self: center;
+    }
+    .textBox2{
+        grid-area: 3 / 1 / span 1 / span 1;
+        width: 70%; 
+        padding:0% 19%; 
+        justify-self: center;
+        align-self: center;
+    }
+    .third{
+        grid-area: 4 / 1 / span 1 / span 1;
+        align-self: center;
+    }
+    .CFIA{
+        grid-area: 5 / 1 / span 1 /span 1;
+        width:90%;
+        padding:0% 0%;
+        align-self: start;
+        justify-self: center;
+        
+    }
+    .textBox3{
+        grid-area: 6 / 1 / span 1 /span 1;
+        width: 70%; 
+        padding:0% 19%;
+        justify-self: center;
+        align-self: start;
+    }
+    .fourth{
+        grid-area: 7 / 1 / span 1 / span 1;
+        align-self: center;
+    }
+    .GWF{
+        grid-area: 8 / 1 / span 1 / span 1;
+        width:90%;
+        padding:0% 0%;
+        align-self:start;
+        justify-self: center;
+    }
+    
+    .textBox4{
+        grid-area: 9 / 1 / span 1 / span 1;
+        width: 70%; 
+        padding:0% 19%;
+        justify-self: center;
+        align-self: start;
+    }
+   
+    
+}
+
